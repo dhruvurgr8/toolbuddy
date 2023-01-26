@@ -1,0 +1,13 @@
+{% extends 'home.html' %}
+
+{% block body %}
+
+{% load static %}
+<div class="container text-center">
+ <h1>Download pdf below</h1>
+ <em class="text-success">Your file is successfully converted to pdf</em><br>
+ <a class="btn btn-success btn-lg my-4" href="{% static 'mypdf.pdf' %}" download="">Download pdf</a>
+ <h2>Thank you, Hope you enjoyed our services ?</h2>
+</div>
+
+{% endblock %}

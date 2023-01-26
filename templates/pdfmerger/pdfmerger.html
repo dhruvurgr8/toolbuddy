@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+{% block title %}Pdf merger{% endblock %}
+
+{% block body %}
+<div class="container ">
+    <div class="jumbotron my-5 text-center bg-dark text-light">
+
+    <!-- Content here -->
+
+            <form method="post" enctype="multipart/form-data">
+                <h2><label for="file">Select files to convert:</label></h2>
+
+                <input class="btn btn-success btn-lg"   type="file" id="file" name="file" multiple>
+
+                <br>
+                <br>
+                <input class="btn btn-primary btn-lg" type="submit">
+{% csrf_token %}
+</form>
+    </div>
+</div>
+{% endblock %}

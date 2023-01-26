@@ -1,0 +1,39 @@
+{% extends 'home.html' %}
+{% block title %} converted text {%endblock%}
+
+{% block body %}
+<div class="container">
+    <h2 class="text-success"> Your Converted Texts are </h2>
+    {% load static %}
+    <textarea class="form-control form-control-lg my-4 pt-8" id="textareainput"  id="w3review" name="w3review" rows="15" cols="50" >{{text}}</textarea><br>
+   <script>
+      var button = document.getElementById("copyID"),
+        input = document.getElementById("textareainput");
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        input.select();
+        document.execCommand("copy");
+      });
+      // Start file download.
+      document.getElementById("downloadbutton").addEventListener("click", function() {
+        // Generate download of hello.txt
+        // file with some content
+        var text = document.getElementById("textareainput").value;
+        var filename = "TextareaInput.txt";
+        download(filename, text);
+      }, false);
+
+      function download(file, text) {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8, ' + encodeURIComponent(text));
+        element.setAttribute('download', file);
+        document.body.appendChild(element);
+        //onClick property
+        element.click();
+        document.body.removeChild(element);
+      }
+    </script>
+</div>
+
+
+{% endblock %}

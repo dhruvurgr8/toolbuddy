@@ -1,0 +1,18 @@
+asgiref==3.6.0
+backports.zoneinfo==0.2.1
+certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
+deprecation==2.1.0
+Django==4.1.5
+img2pdf==0.4.4
+langdetect==1.0.9
+lxml==4.9.2
+packaging==23.0
+pikepdf==6.2.8.post1
+Pillow==9.4.0
+PyPDF2==3.0.1
+pytesseract==0.3.10
+six==1.16.0
+sqlparse==0.4.3
+typing_extensions==4.4.0
+tzdata==2022.7
+wincertstore==0.2

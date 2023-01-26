@@ -1,0 +1,46 @@
+{% extends 'home.html'%}
+{% block title %}image to pdf converter{% endblock %}
+{% block body %}
+<div class="container">
+    <article>
+        <header>
+            <h1 class="headline">Image to pdf Converter</h1>
+            <div class="byline vcard">
+                <address class="author">By <a rel="author" class="url fn n" href="#">Dhruv Patel</a>
+                    <time pubdate datetime="24-01-2023" title="August 28th, 2011"> on 24-01-2023</time>
+                </address>
+
+            </div>
+        </header>
+
+        <div class="article-content">
+            <div class="container text-center">
+                <h1>Welcome Convert Images to pdf</h1>
+                <em>Hello, Welcome to Toolbuddy. You can convert any number of images to pdf and download it simply with
+                    our
+                    tool</em>
+
+                <div class="container ">
+                    <div class="jumbotron my-5 text-center bg-dark text-light">
+
+                        <!-- Content here -->
+
+                        <form method="post" enctype="multipart/form-data">
+                            <h2><label for="file">Select files to convert:</label></h2>
+
+                            <input class="btn btn-success btn-lg" type="file" id="file" name="file" multiple>
+
+                            <br>
+                            <br>
+                            <input class="btn btn-primary btn-lg" type="submit">
+                            {% csrf_token %}
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </article>
+    {% endblock %}

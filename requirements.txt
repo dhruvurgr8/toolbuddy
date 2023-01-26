@@ -1,6 +1,6 @@
 asgiref==3.6.0
 backports.zoneinfo==0.2.1
-certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
+certifi==2022.12.7
 deprecation==2.1.0
 Django==4.1.5
 img2pdf==0.4.4
